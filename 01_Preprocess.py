@@ -34,7 +34,7 @@ COLORS = [
 # process DataFrame
 df = pd.read_csv('input.csv')  
 df.rename(columns=RENAME,inplace=True)
-df.drop(columns='Timestamp',inplace=True)
+df.drop(columns=['Timestamp','Email Address'],inplace=True)
 df.drop_duplicates(subset='Name',keep='last',inplace=True)
 
 # lambda functions

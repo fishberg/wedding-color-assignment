@@ -2,10 +2,12 @@
 
 import pandas as pd
 import random
+import sys
 
 # select which file to load
-df = pd.read_csv('suit.csv')
+#df = pd.read_csv('suit.csv')
 #df = pd.read_csv('dress.csv')
+df = pd.read_csv(sys.argv[1])
 
 # --------------------------------------
 
@@ -18,4 +20,4 @@ for rank in range(1,len(df.columns)+1):
             selected = random.sample(voters,1)[0]
             df.drop(index=selected,inplace=True)
             df.drop(columns=color,inplace=True)
-            print(f'{selected} -> {color}')
+            print(f'{selected} -> {color} ({rank})')

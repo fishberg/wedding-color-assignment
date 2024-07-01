@@ -6,7 +6,8 @@ Simple Python code for processing our wedding party's Google Form responses and 
 
 1. Add output from Google Form to directory as `input.csv`.
 2. Run `./01_Preprocess.py` to create `suit.csv` and `dress.csv` from `input.csv`.
-3. Run `./02_Assign.py` to process `suit.csv` or `dress.csv` and produce an assignment. *Note:* You will need to modify `df = pd.read_csv('X.csv')` to point to the correct preprocessed file.
+3. Run `./02_Assign.py INPUT` to process `INPUT`, a preprocessed file, and produce an assignment. Here, `INPUT` is either `suit.csv` or `dress.csv`.
+4. Run `./03_Minimize.py` to run `./02_Assign.py suit.csv` and `./02_Assign.py dress.csv` each 100 times and output the observed assignment(s) with minimum cost (i.e., smallest sum of ranking).
 
 
 ## Algorithm Explanation

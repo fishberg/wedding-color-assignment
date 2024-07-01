@@ -12,7 +12,7 @@ RENAME = {
     'Rank Color Options [Green [105C30]]': 'Green',
     'Rank Color Options [Teal [008293]]': 'Teal',
     'Rank Color Options [Blue [2844AF]]': 'Blue',
-    'Rank Color Options [Indigo [431174]]': 'Indigo',
+    'Rank Color Options [Purple [431174]]': 'Purple',
     'Rank Color Options [Gray [505362]]': 'Gray',
     'Rank Color Options [Brown [7B5933]]': 'Brown',
 }
@@ -24,7 +24,7 @@ COLORS = [
     'Green',
     'Teal',
     'Blue',
-    'Indigo',
+    'Purple',
     'Gray',
     'Brown',
 ]
